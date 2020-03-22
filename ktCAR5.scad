@@ -26,11 +26,14 @@ difference()
     translate([0, -5, 123.8/2]) cube([52, 5, 123.8], center=true);
     translate([-4, 0,  30/2+48]) cube([60, 20, 30], center=true);
     
-    translate([0, -0.5,  -3.5/2]) cylinder(h=4, r=10/2, center=true, $fn=100);
+    translate([0, -0.5,  -3.5/2]) cylinder(h=10, r=10/2, center=true, $fn=100);
 
     translate([0, -0.5,  0]) cylinder(h=30, r=8/2, center=true, $fn=100);
-    translate([-35+8/2+2, -0.5,  -3.3]) holeB(35);
-    translate([9, -0.5,  -3.3]) holeB(20);
+    translate([-35+8/2+2+15, -0.5,  -3.3+1]) holeB(20);
+    translate([-35+8/2+2, -0.5,  -3.3+1]) holeB(13);
+    translate([-30+15, -0.5,  -5.4-4/2-1/2-3.3+5]) rotate([0, 90, 0]) cylinder(h=5, r=4/2, center=true, $fn=100);
+    translate([-30+15, -0.5,  -5.4-4*(2/3)-1-3.3+5-(10/2)]) cube([5, 4, 4/2+10], center=true);
+    translate([9, -0.5,  -3.3+1]) holeB(20);
     translate([-30, -0.5,  -5.4-4/2-1/2-3.3]) rotate([0, 90, 0]) cylinder(h=17, r=4/2, center=true, $fn=100);
     translate([-30, -0.5,  -5.4-4*(2/3)-1-3.3]) cube([17, 4, 4/2], center=true);
 }
