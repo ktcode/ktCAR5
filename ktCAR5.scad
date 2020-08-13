@@ -24,7 +24,7 @@ difference()
     }
     translate([0, 0, 123.8/2]) cube([58.6+2, 7.8+2, 123.8], center=true);
     translate([0, -5, 123.8/2]) cube([52, 5, 123.8], center=true);
-    translate([-4, 0,  30/2+48]) cube([60, 20, 30], center=true);
+    //translate([-4, 0,  30/2+48]) cube([60, 20, 30], center=true);
     
     translate([0, -0.5,  -3.5/2]) cylinder(h=10, r=10/2, center=true, $fn=100);
 
@@ -49,6 +49,7 @@ translate([-63/2, (7.8+2)/2-1.5, 0]) slide(7, 2);
 translate([-63/2, (7.8+2)/2-1.3, 34.5]) slide2(7, 2);
 //translate([-63/2+2.15, -10/2, 34.5]) rotate([0, 0, 90]) slide2(10, 2);
 translate([63/2, 0, 48.45]) nob(11, 4.5);
+translate([-63/2, 0, 48.45]) rotate([0, 0, 180]) nob(11, 4.5);
 }
 //#translate([0, 0, 65]) cube([100, 100, 100], center=true);
 }
